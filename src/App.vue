@@ -13,7 +13,7 @@
           |
           router-link(:to="{name: 'privacy-policy'}") Privacy Policy
       ActionBar
-        ActionButton View on GitHub
+        a(href="https://github.com/pixelart7/lyrics-base-2"): ActionButton View on GitHub
 </template>
 
 <script>
