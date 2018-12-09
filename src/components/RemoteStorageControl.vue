@@ -31,6 +31,7 @@ export default {
       max-width: 280px;
       border-radius: 6px;
       background-color: darken(#484848, 5);
+      position: relative;
       &.rs-closed {
         background: #FFFFFF;
         max-width: 56px;
