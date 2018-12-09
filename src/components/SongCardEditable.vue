@@ -7,7 +7,7 @@
 </template>
 
 <script>
-const waitFor = delay => new Promise(resolve => setTimeout(resolve, delay));
+const waitFor = delay => new Promise(resolve => setTimeout(resolve, delay))
 
 export default {
   data: () => ({
@@ -71,7 +71,7 @@ export default {
 </script>
 
 <style lang="scss">
-.song-card.is-editable { 
+.song-card.is-editable {
   .gradient-bg-overlay {
     position: absolute;
     border-radius: 6px;

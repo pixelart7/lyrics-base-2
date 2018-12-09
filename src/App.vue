@@ -57,7 +57,7 @@ export default {
           font-size: 12px;
           line-height: 14px;
         }
-        a {
+        a .action-button {
           text-decoration: none;
         }
       }

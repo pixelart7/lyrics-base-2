@@ -35,7 +35,7 @@ export default {
   }),
   async created () {
     this.$rs.on('sync-done', () => {
-      setTimeout( () => {
+      setTimeout(() => {
         this.updateData()
         this.isSyncDone = true
       }, 500)

@@ -40,17 +40,16 @@
 </template>
 
 <script>
-import Kuroshiro from "kuroshiro";
-import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji";
+import Kuroshiro from 'kuroshiro'
+import KuromojiAnalyzer from 'kuroshiro-analyzer-kuromoji'
 
 import Loader from '@/components/Loader'
 import ActionBar from '@/components/ActionBar'
 import ActionButton from '@/components/ActionButton'
 import SongCardEditable from '@/components/SongCardEditable'
 import LyricsDisplay from '@/components/LyricsDisplay'
-import { qualifiedTypeIdentifier } from 'babel-types';
 
-const waitFor = delay => new Promise(resolve => setTimeout(resolve, delay));
+const waitFor = delay => new Promise(resolve => setTimeout(resolve, delay))
 
 export default {
   data: () => ({
@@ -129,7 +128,7 @@ export default {
       })
     },
     removeReadings () {
-      this.rawData.lyrics.original = this.rawData.lyrics.original.replace(/{{1}([^{}()]+)}{1}\({1}([^{}()]+)\){1}/gm, '$1');
+      this.rawData.lyrics.original = this.rawData.lyrics.original.replace(/{{1}([^{}()]+)}{1}\({1}([^{}()]+)\){1}/gm, '$1')
     },
     async jpGenerateFurigana () {
       this.status.isGeneratingFurigana = true
