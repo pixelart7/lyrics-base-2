@@ -51,6 +51,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 36px;
   & > .hero {
     width: 100%;
     height: 96px;

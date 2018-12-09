@@ -28,11 +28,11 @@
       .column.original(:class="{'is-shown': smallScreen.languageToggle === 'original'}")
         .section-header
           h1 ORIGINAL LYRICS
-        textarea-autosize(v-model="rawData.lyrics.original", placeholder="Original lyrics\nUse {word}(reading) to add reading annotation")
+        textarea-autosize(v-model="rawData.lyrics.original", :min-height="420", placeholder="Original lyrics\nUse {word}(reading) to add reading annotation")
       .column.translate(:class="{'is-shown': smallScreen.languageToggle === 'translate'}")
         .section-header
           h1 TRANSLATED LYRICS
-        textarea-autosize(v-model="rawData.lyrics.translate", placeholder="Translated lyrics")
+        textarea-autosize(v-model="rawData.lyrics.translate", :min-height="420", placeholder="Translated lyrics")
       .column.preview(:class="{'is-shown': smallScreen.isPreview}")
         .section-header
           h1 PREVIEW
@@ -164,6 +164,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 36px;
   & > .hero {
     width: 100%;
     height: 96px;
