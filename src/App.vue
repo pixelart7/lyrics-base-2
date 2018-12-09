@@ -13,7 +13,7 @@
           |
           router-link(:to="{name: 'privacy-policy'}") Privacy Policy
       ActionBar
-        a(href="https://github.com/pixelart7/lyrics-base-2"): ActionButton View on GitHub
+        a.link-wrap(href="https://github.com/pixelart7/lyrics-base-2"): ActionButton View on GitHub
 </template>
 
 <script>
@@ -57,7 +57,7 @@ export default {
           font-size: 12px;
           line-height: 14px;
         }
-        a .action-button {
+        a.link-wrap {
           text-decoration: none;
         }
       }
